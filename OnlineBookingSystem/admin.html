@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | BookEase</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+
+<!-- Navbar -->
+
+
+<header>
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<img src="img/logo.png">
+
+<h2>BookEase Admin</h2>
+
+</div>
+
+
+
+<ul>
+
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+
+<li>
+<a href="admin.html">Admin</a>
+</li>
+
+
+<li>
+<a href="login.html" class="login-btn">Logout</a>
+</li>
+
+
+</ul>
+
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<!-- Admin Header -->
+
+
+<section class="dashboard-header">
+
+
+<h1>
+Admin Dashboard
+</h1>
+
+
+<p>
+Manage customers and bookings easily.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Statistics Cards -->
+
+
+<section class="dashboard-cards">
+
+
+
+<div class="dashboard-card">
+
+
+<h3>
+Total Bookings
+</h3>
+
+
+<h2 id="totalBookings">
+0
+</h2>
+
+
+</div>
+
+
+
+
+
+
+<div class="dashboard-card">
+
+
+<h3>
+Confirmed Bookings
+</h3>
+
+
+<h2 id="confirmedBookings">
+0
+</h2>
+
+
+</div>
+
+
+
+
+
+
+<div class="dashboard-card">
+
+
+<h3>
+Cancelled Bookings
+</h3>
+
+
+<h2 id="cancelledBookings">
+0
+</h2>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- All Bookings -->
+
+
+<section class="booking-summary">
+
+
+<h1>
+Customer Bookings
+</h1>
+
+
+
+
+<div class="table-container">
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+Booking ID
+</th>
+
+
+<th>
+Customer Name
+</th>
+
+
+<th>
+Service
+</th>
+
+
+<th>
+Date
+</th>
+
+
+<th>
+Status
+</th>
+
+
+<th>
+Action
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody id="adminBookingData">
+
+
+</tbody>
+
+
+
+
+</table>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Admin Features -->
+
+
+<section class="services">
+
+
+<h1>
+Admin Controls
+</h1>
+
+
+
+<div class="service-container">
+
+
+
+<div class="card">
+
+
+<h3>
+Manage Bookings
+</h3>
+
+
+<p>
+View and control all customer bookings.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Track Status
+</h3>
+
+
+<p>
+Check confirmed and cancelled bookings.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Management
+</h3>
+
+
+<p>
+Remove unnecessary booking records.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+BookEase Online Booking System
+</h3>
+
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

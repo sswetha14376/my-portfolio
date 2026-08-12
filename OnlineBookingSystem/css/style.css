@@ -1,0 +1,626 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f8fafc;
+    color:#333;
+
+}
+
+
+/* Navbar */
+
+
+header{
+
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+.logo img{
+
+    width:50px;
+    height:50px;
+
+}
+
+
+.logo h2{
+
+    color:#2563eb;
+
+}
+
+
+
+.navbar ul{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+
+.navbar ul li a{
+
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+
+}
+
+
+.navbar ul li a:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+.login-btn{
+
+    background:#2563eb;
+    color:white !important;
+    padding:10px 20px;
+    border-radius:25px;
+
+}
+
+
+
+
+/* Hero Sections */
+
+
+.hero,
+.contact-home{
+
+    padding:80px 8%;
+    text-align:center;
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #60a5fa
+    );
+    color:white;
+
+}
+
+
+
+.hero h1,
+.contact-home h1{
+
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p,
+.contact-home p{
+
+    font-size:18px;
+
+}
+
+
+
+
+/* Buttons */
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+
+}
+
+
+
+.btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+
+
+/* About Section */
+
+
+.about-home{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    gap:40px;
+
+}
+
+
+
+.about-home div{
+
+    flex:1;
+
+}
+
+
+.about-home img{
+
+    width:45%;
+    border-radius:20px;
+
+}
+
+
+
+
+/* Services */
+
+
+.services{
+
+    padding:60px 8%;
+    text-align:center;
+
+}
+
+
+
+.services h1{
+
+    color:#1e3a8a;
+    margin-bottom:40px;
+
+}
+
+
+
+.service-container{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.card img{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+
+
+.card h3{
+
+    margin:20px 0;
+
+}
+
+
+
+
+
+/* Booking */
+
+
+.booking-section{
+
+    display:flex;
+    justify-content:center;
+    padding:60px 8%;
+
+}
+
+
+
+.booking-box{
+
+    background:white;
+    width:600px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.input-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+
+}
+
+
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* Dashboard */
+
+
+.dashboard-header{
+
+    text-align:center;
+    padding:50px 8%;
+
+}
+
+
+
+.dashboard-header h1{
+
+    color:#2563eb;
+
+}
+
+
+
+.dashboard-cards{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:30px 8%;
+    flex-wrap:wrap;
+
+}
+
+
+
+.dashboard-card{
+
+    background:white;
+    width:280px;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.dashboard-card i{
+
+    font-size:40px;
+    color:#2563eb;
+
+}
+
+
+
+
+
+/* Tables */
+
+
+.booking-summary{
+
+    padding:50px 8%;
+    text-align:center;
+
+}
+
+
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:30px;
+
+}
+
+
+
+th{
+
+    background:#2563eb;
+    color:white;
+    padding:15px;
+
+}
+
+
+
+td{
+
+    padding:15px;
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.success{
+
+    color:green;
+    font-weight:bold;
+
+}
+
+
+.pending{
+
+    color:orange;
+    font-weight:bold;
+
+}
+
+
+.cancel{
+
+    color:red;
+    font-weight:bold;
+
+}
+
+
+
+
+.cancel-btn,
+.view-btn{
+
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+
+}
+
+
+
+.cancel-btn{
+
+    background:red;
+
+}
+
+
+
+.view-btn{
+
+    background:#2563eb;
+
+}
+
+
+
+
+
+/* Profile */
+
+
+.profile-section{
+
+    display:flex;
+    justify-content:center;
+    padding:50px;
+
+}
+
+
+
+.profile-box{
+
+    background:white;
+    padding:30px;
+    width:350px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+
+}
+
+
+
+
+.social i{
+
+    margin:10px;
+    font-size:20px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+
+.navbar ul{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+
+.hero h1,
+.contact-home h1{
+
+    font-size:30px;
+
+}
+
+
+
+.about-home{
+
+    flex-direction:column;
+
+}
+
+
+
+.about-home img{
+
+    width:90%;
+
+}
+
+
+
+.service-container{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+
+.booking-box{
+
+    width:95%;
+
+}
+
+
+
+.dashboard-cards{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+
+}

@@ -1,0 +1,718 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   GLOBAL
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1329;
+    color:white;
+    overflow-x:hidden;
+}
+
+section{
+    padding:100px 10%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#8b5cf6,#06b6d4);
+    border-radius:20px;
+}
+
+/* ==========================================
+ NAVBAR
+========================================== */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    backdrop-filter:blur(15px);
+    background:rgba(11, 19, 41, 0.85);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.logo h2{
+    color:white;
+    font-size:32px;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ==========================================
+ HOME
+========================================== */
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h3{
+    color:#38bdf8;
+    font-size:25px;
+}
+
+.home-content h1{
+    font-size:65px;
+    margin:15px 0;
+}
+
+.home-content h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.typing{
+    color:#38bdf8;
+    font-weight:bold;
+}
+
+.home-content p{
+    color:#d1d5db;
+    font-size:18px;
+    line-height:32px;
+    margin-bottom:35px;
+}
+
+/* Buttons */
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.btn1,
+.btn2{
+    padding:14px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn1{
+    background:#38bdf8;
+    color:white;
+}
+
+.btn2{
+    border:2px solid #38bdf8;
+    color:white;
+}
+
+.btn1:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px #38bdf8;
+}
+
+.btn2:hover{
+    background:#38bdf8;
+}
+
+/* Social */
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.08);
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.social-icons a:hover{
+    background:#38bdf8;
+    transform:translateY(-8px);
+}
+
+/* Profile Image */
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:360px;
+    height:360px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #38bdf8;
+    box-shadow:0 0 40px #38bdf8;
+    animation:floatImage 4s infinite;
+}
+
+@keyframes floatImage{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-20px); }
+    100%{ transform:translateY(0); }
+}
+
+/* ==========================================
+ SECTION TITLE
+========================================== */
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-subtitle{
+    color:#38bdf8;
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:5px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#38bdf8;
+}
+
+/* ==========================================
+ ABOUT & EDUCATION (MY STORY GRID - SAME HEIGHT)
+========================================== */
+.story-edu-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:stretch; /* Forces equal height */
+}
+
+.story-box,
+.edu-timeline-box{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.box-title{
+    font-size:26px;
+    color:#ffffff;
+    margin-bottom:25px;
+    position:relative;
+    padding-left:15px;
+}
+
+.box-title::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:5px;
+    bottom:5px;
+    width:4px;
+    background:#38bdf8;
+    border-radius:2px;
+}
+
+.story-box p{
+    color:#94a3b8;
+    font-size:16px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.story-meta{
+    display:flex;
+    gap:40px;
+    margin-top:auto;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.story-meta span{
+    font-size:12px;
+    color:#64748b;
+    letter-spacing:1px;
+    font-weight:600;
+}
+
+.story-meta p{
+    color:#ffffff;
+    font-weight:600;
+    font-size:16px;
+    margin-top:5px;
+}
+
+/* Timeline */
+.timeline{
+    position:relative;
+    padding-left:20px;
+    border-left:2px solid rgba(56,189,248,.3);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.timeline-item{
+    position:relative;
+    background:rgba(255,255,255,.03);
+    padding:20px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.timeline-dot{
+    position:absolute;
+    left:-27px;
+    top:25px;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#38bdf8;
+    box-shadow:0 0 10px #38bdf8;
+}
+
+.timeline-date{
+    color:#38bdf8;
+    font-size:13px;
+    font-weight:600;
+}
+
+.timeline-title{
+    color:#ffffff;
+    font-size:18px;
+    margin:6px 0;
+}
+
+.timeline-institution{
+    color:#94a3b8;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.cgpa-badge{
+    display:inline-block;
+    background:rgba(56,189,248,.1);
+    color:#38bdf8;
+    border:1px solid rgba(56,189,248,.3);
+    padding:4px 12px;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* ==========================================
+        SKILLS
+========================================== */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:30px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:35px 20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.skill-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 0 30px rgba(56,189,248,.4);
+}
+
+.skill-card i{
+    font-size:55px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.skill-card h3{
+    font-size:20px;
+}
+
+/* ==========================================
+        PROJECTS (2x2 GRID FORMAT)
+========================================== */
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:35px;
+    margin-top:50px;
+}
+
+.project-card{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:transform .3s ease, box-shadow .3s ease;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 30px rgba(56,189,248,.5);
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project-content p{
+    color:#d1d5db;
+    line-height:28px;
+    margin-bottom:18px;
+}
+
+.project-content ul{
+    margin-left:20px;
+    color:white;
+    line-height:30px;
+    margin-bottom:20px;
+}
+
+/* Technology Tags */
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.tech span{
+    padding:8px 18px;
+    border-radius:30px;
+    background:#38bdf8;
+    color:white;
+    font-size:14px;
+    transition:.3s;
+}
+
+.tech span:hover{
+    background:#8b5cf6;
+    transform:scale(1.08);
+}
+
+/* Source Code Button */
+.project-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.project-buttons a{
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:30px;
+    background:#38bdf8;
+    color:white;
+    transition:.3s;
+    font-weight:500;
+}
+
+.project-buttons a:hover{
+    background:#8b5cf6;
+    transform:scale(1.05);
+}
+
+/* ==========================================
+        CONTACT SECTION
+========================================== */
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:stretch; /* Equal heights for contact panels */
+}
+
+/* Contact Form Box & Light Inputs */
+.contact-form{
+    background:rgba(255,255,255,.04);
+    padding:40px;
+    border-radius:24px;
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px 20px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    outline:none;
+    background:rgba(255,255,255,.05); /* Light translucent shade box */
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color:#64748b;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#38bdf8;
+    background:rgba(255,255,255,.08);
+    box-shadow:0 0 15px rgba(56,189,248,.2);
+}
+
+.send-btn{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.send-btn:hover{
+    background:#8b5cf6;
+    transform:scale(1.02);
+}
+
+/* Contact Info Box (Matching glassmorphism card style) */
+.contact-info{
+    background:rgba(255,255,255,.04);
+    padding:40px;
+    border-radius:24px;
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.contact-info h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.contact-info p{
+    color:#94a3b8;
+    line-height:28px;
+    margin-bottom:30px;
+    font-size:16px;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.info-box i{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#38bdf8;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.info-box span{
+    color:#ffffff;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* ==========================================
+        FOOTER
+========================================== */
+footer{
+    background:#060c1a;
+    margin-top:100px;
+    padding:40px 10%;
+    text-align:center;
+}
+
+.footer-social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:25px 0;
+}
+
+.footer-social a{
+    color:white;
+    font-size:28px;
+    transition:.4s;
+}
+
+.footer-social a:hover{
+    color:#38bdf8;
+}
+
+footer hr{
+    margin:30px 0;
+    border:.5px solid rgba(255,255,255,.1);
+}
+
+/* ==========================================
+        BACK TO TOP
+========================================== */
+#topBtn{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    transition:.4s;
+}
+
+#topBtn:hover{
+    background:#8b5cf6;
+    transform:scale(1.1);
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+@media(max-width:992px){
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .home-content h1{
+        font-size:48px;
+    }
+
+    .home-content h2{
+        font-size:28px;
+    }
+
+    .story-edu-grid,
+    .contact-container,
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .buttons,
+    .social-icons{
+        justify-content:center;
+    }
+}
+
+@media(max-width:600px){
+    section{
+        padding:80px 5%;
+    }
+
+    .home-content h1{
+        font-size:40px;
+    }
+
+    .home-image img{
+        width:280px;
+        height:280px;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+}

@@ -1,0 +1,175 @@
+// Get Account Details
+
+let account = JSON.parse(
+    localStorage.getItem("account")
+);
+
+
+
+
+
+let transferForm =
+document.getElementById("transferForm");
+
+
+
+
+
+if(transferForm){
+
+
+
+transferForm.addEventListener("submit",function(e){
+
+
+
+e.preventDefault();
+
+
+
+
+let receiverAccount =
+document.getElementById("receiverAccount").value;
+
+
+
+
+let amount =
+Number(
+document.getElementById("transferAmount").value
+);
+
+
+
+
+
+
+
+if(account == null){
+
+
+alert("Please Login First");
+
+
+window.location.href="login.html";
+
+
+return;
+
+
+}
+
+
+
+
+
+
+
+if(amount <= 0){
+
+
+alert("Enter Valid Amount");
+
+
+return;
+
+
+}
+
+
+
+
+
+
+
+
+if(amount > account.balance){
+
+
+alert("Insufficient Balance ❌");
+
+
+return;
+
+
+}
+
+
+
+
+
+
+
+
+account.balance -= amount;
+
+
+
+
+
+
+account.transactions.push({
+
+
+type:"Money Transfer",
+
+
+amount:amount,
+
+
+receiver:receiverAccount,
+
+
+date:new Date().toLocaleString()
+
+
+
+});
+
+
+
+
+
+
+
+
+localStorage.setItem(
+
+
+"account",
+
+
+JSON.stringify(account)
+
+
+);
+
+
+
+
+
+
+
+
+document.getElementById("transferMessage").innerHTML =
+
+"Money Transfer Successful ✅";
+
+
+
+
+
+
+
+
+transferForm.reset();
+
+
+
+
+
+});
+
+
+
+}

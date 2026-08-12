@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MyBank Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- Sidebar -->
+
+
+<div class="sidebar">
+
+
+<h2>
+🏦 MyBank
+</h2>
+
+
+
+<ul>
+
+
+<li>
+<a href="dashboard.html">
+Dashboard
+</a>
+</li>
+
+
+
+<li>
+<a href="transactions.html">
+Transactions
+</a>
+</li>
+
+
+
+
+<li>
+<a href="transfer.html">
+Transfer
+</a>
+</li>
+
+
+
+
+<li>
+<a href="profile.html">
+Profile
+</a>
+</li>
+
+
+
+
+<li>
+<a href="loans.html">
+Loans
+</a>
+</li>
+
+
+
+
+<li>
+<a href="cards.html">
+Cards
+</a>
+</li>
+
+
+
+
+<li>
+<a href="index.html">
+Logout
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Main Content -->
+
+
+<div class="main">
+
+
+
+<h1>
+Welcome to MyBank Dashboard
+</h1>
+
+
+
+
+
+<!-- Account Cards -->
+
+
+<div class="dashboard-cards">
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+Account Holder
+</h3>
+
+
+<h2 id="username">
+User
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+Account Number
+</h3>
+
+
+<h2 id="accNumber">
+000000
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+Available Balance
+</h3>
+
+
+<h2 id="balance">
+$0
+</h2>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Quick Actions -->
+
+
+<h2 class="heading">
+Quick Actions
+</h2>
+
+
+
+
+<div class="actions">
+
+
+
+
+
+<div>
+
+
+<img src="images/photo-1554224155-6726b3ff858f.jpg">
+
+
+<h3>
+Deposit
+</h3>
+
+
+<button onclick="deposit()">
+
+Deposit
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<img src="images/photo-1554224154-26032ffc0d07.jpg">
+
+
+<h3>
+Withdraw
+</h3>
+
+
+<button onclick="withdrawMoney()">
+
+Withdraw
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<img src="images/photo-1563013544-824ae1b704d3.jpg">
+
+
+<h3>
+Transfer
+</h3>
+
+
+<a href="transfer.html">
+
+
+<button>
+
+Transfer
+
+</button>
+
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<img src="images/photo-1512941937669-90a1b58e7e9c.jpg">
+
+
+<h3>
+Mobile Banking
+</h3>
+
+
+<button>
+
+Open
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Transactions -->
+
+
+<h2 class="heading">
+Recent Transactions
+</h2>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+Type
+</th>
+
+
+<th>
+Amount
+</th>
+
+
+<th>
+Date
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="transactionTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

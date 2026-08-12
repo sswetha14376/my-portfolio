@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loan Services - MyBank</title>
+
+<link rel="stylesheet" href="loan.css">
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<h1>
+🏦 MyBank Loan Services
+</h1>
+
+</header>
+
+
+
+
+
+
+<section class="loan-section">
+
+
+<h2>
+Choose Your Loan
+</h2>
+
+
+
+
+<div class="loan-container">
+
+
+
+
+
+<!-- Home Loan -->
+
+
+<div class="loan-card">
+
+
+<img src="images/photo-1560518883-ce09059eeffa.jpg">
+
+
+<h3>
+Home Loan
+</h3>
+
+
+<p>
+Get your dream home with easy EMI plans.
+</p>
+
+
+
+<button onclick="selectLoan('Home Loan')">
+
+Apply Now
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Car Loan -->
+
+
+<div class="loan-card">
+
+
+<img src="images/photo-1503376780353-7e6692767b70.jpg">
+
+
+<h3>
+Car Loan
+</h3>
+
+
+<p>
+Buy your favourite car with flexible plans.
+</p>
+
+
+
+<button onclick="selectLoan('Car Loan')">
+
+Apply Now
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Education Loan -->
+
+
+<div class="loan-card">
+
+
+<img src="images/photo-1523240795612-9a054b0db644.jpg">
+
+
+<h3>
+Education Loan
+</h3>
+
+
+<p>
+Support your higher education dreams.
+</p>
+
+
+
+<button onclick="selectLoan('Education Loan')">
+
+Apply Now
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="loan-form">
+
+
+
+<h2>
+Loan Application Form
+</h2>
+
+
+
+
+
+<form id="loanForm">
+
+
+
+
+
+<input
+
+type="text"
+
+id="loanName"
+
+placeholder="Full Name"
+
+required>
+
+
+
+
+
+
+<input
+
+type="number"
+
+id="loanAmount"
+
+placeholder="Loan Amount"
+
+required>
+
+
+
+
+
+
+<input
+
+type="number"
+
+id="loanDuration"
+
+placeholder="Duration (Years)"
+
+required>
+
+
+
+
+
+
+<input
+
+type="text"
+
+id="loanType"
+
+placeholder="Select Loan Type"
+
+readonly>
+
+
+
+
+
+
+<button type="submit">
+
+Submit Application
+
+</button>
+
+
+
+
+
+</form>
+
+
+
+
+
+<h3 id="loanMessage"></h3>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<script src="loan.js"></script>
+
+
+</body>
+
+</html>
