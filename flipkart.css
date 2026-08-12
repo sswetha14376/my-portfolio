@@ -1,0 +1,276 @@
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav-container{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 2px 2px gray;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    height: inherit;
+    width: 13%;
+    display: flex;
+    align-items: center;
+}
+.search{
+      height: inherit;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search > input{
+    height: 45px;
+    width: 98%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(236, 234, 234, 0.955);
+    border-radius: 0 7px 7px 0;
+}
+.search > i{
+    background-color: rgba(236, 234, 234, 0.955);
+    font-size: 25px;
+    height: 45px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px 0 0 7px ;
+
+}
+.icons{
+      height: inherit;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login , .cart , .seller , .dots{
+    display: flex;
+    font-size: 22px;
+    font-family: sans-serif;
+    gap: 5px;
+} 
+
+ 
+
+.border-1{
+    height: 130px;
+    width: 97%;
+    box-shadow: -1px 1px 2px black;
+    margin: 50px auto;
+}
+.products{
+   display: flex;
+   justify-content: space-evenly;
+     padding: 10px 50px 5px 50px;   
+}
+.names{
+    display: flex;
+    flex-direction: column;
+     row-gap: 30px;
+}
+.border-2{
+    height: 380px;
+    width: 80%;
+    box-shadow: -1px 1px 2px black;
+    margin: 20px 0 10px 23px;
+    font-family: sans-serif;
+    padding: 10px;
+     
+}
+
+.box-1{
+ display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+     
+
+}
+
+.border-3{
+    height: 700px;
+    width: 450px;
+    box-shadow: 0 0 2px black;
+    margin: 50px 0 0 20px;
+     padding: 20px; 
+     
+}
+.box-2{
+    display: flex;
+     
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.box-3{ 
+    width: 200px;
+    height: 280px;
+    border: solid 1px gray;
+    row-gap: 30px;
+    padding:20px 0 0 20px ;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.box-5{
+    
+     display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    gap: 10px;   
+    
+}
+.image-1{
+    display: flex;
+    column-gap: 10px;
+    
+}.image-2{
+    display: flex;
+    column-gap: 20px;
+    /* padding: 50px; */
+}
+ 
+.side-2{
+    padding: 50px 5px 0px 10px;
+}
+ 
+  
+
+.flip{
+    display: flex;
+     column-gap: 10px;
+     margin: 25px 15px 10px 15px;
+     
+     
+}
+
+
+body {
+  margin: 0;
+  font-family:  sans-serif;
+}
+
+footer {
+  background:black;
+  color: white;
+  padding: 40px 60px 10px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-title {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 20px;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons i:hover {
+  color: #fff;
+}
+
+.footer-separator {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+.footer-bottom {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 40px;
+}
+
+.bottom-links div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottom-links div:hover {
+  text-decoration: underline;
+}
+
+ 
+.copy-text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+ 
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-icons img {
+  height: 26px;
+}
+
+
+
+
+ 
+ 
+ 
